@@ -6,3 +6,5 @@ a script that compiles a C file but does not link
 a script that generates the assembly code of a C code ansd save it in an output file
 3.Name:
 a script that compiles a C file and creates an executable named cisfun
+4.Hello,puts:
+a C program that prints exactly Programming s building a multilingual puzzle
