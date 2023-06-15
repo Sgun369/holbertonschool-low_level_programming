@@ -8,3 +8,5 @@ a script that generates the assembly code of a C code ansd save it in an output 
 a script that compiles a C file and creates an executable named cisfun
 4.Hello,puts:
 a C program that prints exactly Programming s building a multilingual puzzle
+5.Hello,printf:
+a C program that prints exactly with proper grammar but the outcome is a piece of art
