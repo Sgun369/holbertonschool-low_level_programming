@@ -14,12 +14,17 @@ printf("Size of long long: %zu byte(s)\n", sizeof(long long));
 printf("Size of float: %zu byte(s)\n", sizeof(float));
 printf("Size of double: %zu byte(s)\n", sizeof(double));
 printf("Size of long double: %zu byte(s)\n", sizeof(long double));
-#if __SIZEOF_POINTER__ == 4
+if (sizeof(void *) == 4)
+{
 printf("Size of pointer: 4 byte(s) (32-bit machine)\n");
-#elif __SIZEOF_POINTER__ == 8
+}
+else if (sizeof(void *) == 8)
+{
 printf("Size of pointer: 8 byte(s) (64-bit machine)\n");
-#else
+}
+else
+{
 printf("Size of pointer: Unknown\n");
-#endif
+}
 return (0);
 }
