@@ -4,4 +4,4 @@
 3.alphABET:
 a program that prints the alphabet in lowercase,and then in uppercase,followed with a new line
 4.When i was having that alphabet soup,i never thought that it would pay off:
-a program that prints the alphabet in lowercase,followed by a new line.
+a program that prints the alphabet in lowercase,followed by a new line..
