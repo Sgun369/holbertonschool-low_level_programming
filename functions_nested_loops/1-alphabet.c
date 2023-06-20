@@ -1,4 +1,4 @@
-#include "putchar.h"
+#include "main.h"
 /**
 *prints alphabet - from a to z
 *return: always 0
