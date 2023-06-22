@@ -1,0 +1,5 @@
+school: school.o
+
+school.o:school.c
+
+school.c:
