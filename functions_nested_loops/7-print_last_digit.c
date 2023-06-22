@@ -2,7 +2,7 @@
 /**
  *  print_last_digit - print last digit of an integer.
  *
- *  @int: integer to procecc
+ *  @i: integer to procecc
  *
  *   Return: The value of the last digit
  */
