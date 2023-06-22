@@ -5,7 +5,7 @@ NAME = school
 
 
 all:
-	$(cc) -o $(NAME) $(SRC)
+	$(cc) $(SRC) -o $(NAME)
 
 clean:
 	rm -f $(OBJ)
