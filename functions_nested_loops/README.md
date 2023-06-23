@@ -9,3 +9,4 @@ a functon that prints the sign of a number.
 7.There are only 3 colors 10 digits and 7 notes its what we do whith them thats important
 10.a+b:
 a function that adds two integers and returns the result
+9.times_table
