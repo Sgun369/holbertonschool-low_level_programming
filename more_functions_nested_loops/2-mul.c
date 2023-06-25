@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * mul(int a, intb) - multiplies two integer
+ * mul - multiplies two integer
  *
  * @a: int to multiplie
  *@b: int to multiplie
