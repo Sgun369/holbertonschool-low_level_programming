@@ -6,3 +6,4 @@
 (.Numbers constitute the only universal language
 6.The shortest distance between two points is a straight line
 i feel like i am diagonally parked in a parallel unniverse
+8.You are so much sunshine in every square inch
