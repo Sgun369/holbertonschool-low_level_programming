@@ -8,3 +8,5 @@
 7.Winning is only half of it.Having fun is tthe other half
 8.Arrays are not pointers
 9.strcopy
+0.str:
+a function stah concatenate two strings
