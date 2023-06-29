@@ -10,3 +10,5 @@
 9.strcopy
 0.str:
 a function stah concatenate two strings
+strncat:
+a function that concatenates two strings
