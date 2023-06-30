@@ -9,6 +9,7 @@
 char *leet(char *str)
 {
 	static char encoded[256];
+
 	int i, j;
 
 	for (i = 0, j = 0; str[i] != '\0'; i++, j++)
@@ -16,22 +17,15 @@ char *leet(char *str)
 	{
 		char c = str[i];
 
-		if (c == 'a' || c == 'A')
-			encoded[j] = '4';
+		encoded[j] = (c == 'a' || c == 'A') ? '4' :
 
-		else if (c == 'e' || c == 'E')
-			encoded[j] = '3';
+			(c == 'e' || c == 'E') ? '3' :
 
-		else if (c == 'o' || c == 'O')
-			encoded[j] = '0';
-		else if (c == 't' || c == 'T')
-			encoded[j] = '7';
+			(c == 'o' || c == 'O') ? '0' :
 
-		else if (c == 'l' || c == 'L')
-			encoded[j] = '1';
+			(c == 't' || c == 'T') ? '7' :
 
-		else
-			encoded[j] = c;
+			(c == 'l' || c == 'L') ? '1' : c;
 	}
 	encoded[j] = '\0';
 
