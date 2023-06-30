@@ -14,3 +14,4 @@ strncat:
 a function that concatenates two strings
 2.strncpy
 3.strcmp
+4.I am a kinf of paranoid in reverse. i suspect people of plotting to make me happy
