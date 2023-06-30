@@ -13,3 +13,4 @@ a function stah concatenate two strings
 strncat:
 a function that concatenates two strings
 2.strncpy
+3.strcmp
