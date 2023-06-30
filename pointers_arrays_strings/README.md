@@ -20,3 +20,4 @@ Expect the best.Preparre for the worst.Capitalize on what comes
 7.Mozzart composed his music not for the elite,but for everyone
 10.Great leaders are willing to sacrifice the numbers to save the people.poor leaders sacrifice the people to save the numbers
 0.memset
+1.memcpy
