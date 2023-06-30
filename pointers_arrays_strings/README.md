@@ -21,3 +21,4 @@ Expect the best.Preparre for the worst.Capitalize on what comes
 10.Great leaders are willing to sacrifice the numbers to save the people.poor leaders sacrifice the people to save the numbers
 0.memset
 1.memcpy
+2.strchr
