@@ -16,3 +16,4 @@ a function that concatenates two strings
 3.strcmp
 4.I am a kinf of paranoid in reverse. i suspect people of plotting to make me happy
 5.Always look up
+Expect the best.Preparre for the worst.Capitalize on what comes
