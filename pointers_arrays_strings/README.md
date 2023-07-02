@@ -22,3 +22,4 @@ Expect the best.Preparre for the worst.Capitalize on what comes
 0.memset
 1.memcpy
 2.strchr
+3.strspn
