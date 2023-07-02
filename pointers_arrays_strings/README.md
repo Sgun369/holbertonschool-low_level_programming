@@ -26,3 +26,4 @@ Expect the best.Preparre for the worst.Capitalize on what comes
 4.strpbrk
 5.strstr
 6.chess is mental torture
+7.The line of life is a ragged diagonal between duty and desire
