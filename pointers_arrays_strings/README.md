@@ -24,3 +24,4 @@ Expect the best.Preparre for the worst.Capitalize on what comes
 2.strchr
 3.strspn
 4.strpbrk
+5.strstr
