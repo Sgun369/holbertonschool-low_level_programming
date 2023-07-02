@@ -25,3 +25,4 @@ Expect the best.Preparre for the worst.Capitalize on what comes
 3.strspn
 4.strpbrk
 5.strstr
+6.chess is mental torture
