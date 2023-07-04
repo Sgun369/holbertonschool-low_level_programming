@@ -1,4 +1,12 @@
 #include <stdio.h>
+/**
+ * main - print it's name.
+ *
+ * @argc: argument count.
+ * @argv: arguments.
+ *
+ * Return: 0.
+ */
 
 int main(int __attribute__((unused)) argc, char *argv[])
 {
