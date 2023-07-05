@@ -13,11 +13,11 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	int result;
+	int result = 1;
 
 	for (i = 1; i < argc; i++)
 	{
-		result = result * strtol( argv[i], NULL, 10 );
+		result = result * strtol(argv[i], NULL, 10);
 	}
 
 	if (argc < 2)
@@ -30,6 +30,6 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", result);
 	}
-		
+
 	return (0);
 }
