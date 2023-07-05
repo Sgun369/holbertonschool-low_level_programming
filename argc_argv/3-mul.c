@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		result = result * strtol(argv[i], NULL, 10);
 	}
 
-	if (argc < 2)
+	if (argc != 3)
 	{
 		printf("ERROR\n");
 
