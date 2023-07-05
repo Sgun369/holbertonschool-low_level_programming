@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiplies two numbers.
  *
@@ -8,13 +9,27 @@
  * Return: 1 and print ERROR if the program doesn't
  *	recieve two integers.
  */
-int main(int argc, char **argv __attribute__((unused)))
+int main(int argc, char *argv[])
 {
+	int i;
+
+	int result;
+
+	for (i = 1; i < argc; i++)
+	{
+		result = result * strtol( argv[i], NULL, 10 );
+	}
+
 	if (argc < 2)
 	{
 		printf("ERROR\n");
 
 		return (1);
 	}
+	else
+	{
+		printf("%d\n", result);
+	}
+		
 	return (0);
 }
