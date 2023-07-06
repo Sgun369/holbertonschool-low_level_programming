@@ -4,3 +4,4 @@
 3.you mustn't be afraid to dream a little bigger,darling
 4.once an idea has taken hold of the brain it's almots impossible to eradicate
 5.Your subconcious is looking for the dreamer
+inception.is it possible?
