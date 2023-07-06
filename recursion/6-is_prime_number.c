@@ -10,14 +10,10 @@
 
 long int getFactorial(int n)
 {
-	 long int f = 1;
-	 int i;
-
-	for (i = 2; i <= n; i++)
-{
-	f *= i;
-}
-	return (f);
+	if (n <= 1)
+	return (1);
+	else
+	return (n * getFactorial(n - 1));
 }
 
 /**
@@ -30,13 +26,10 @@ long int getFactorial(int n)
 int is_prime_number(int n)
 {
 	long int fact = getFactorial(n - 1);
-if (fact % n == n - 1)
-{
-	return (1);
-}
-else
-{
-	return (0);
-}
 
+	if (fact % n == n - 1)
+
+		return (1);
+	else
+		return (0);
 }
