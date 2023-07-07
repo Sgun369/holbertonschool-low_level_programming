@@ -1,35 +1,33 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * getFactorial- calculates the factorial of a given number n.
+ * is_prime_helper - recursive helper function
+ *	to check if a number is primme.
+ *@n: the number to check.
+ *@divisor: the current divisor being tested.
  *
- * @n:input number.
- *
- * Return: returns the calculated factorial f.
+ *Return: 1 if the number is prime, 0 otherwise.
  */
-
-long int getFactorial(int n)
+int is_prime_helper(int n, int divisor)
 {
-	if (n <= 1)
-	return (1);
-	else
-	return (n * getFactorial(n - 1));
-}
+	if (n < 2)
+		return (0);
 
+	if (n % divisor == 0)
+		return (0);
+
+	if (divisor > n / 2)
+		return (1);
+
+	return (is_prime_helper(n, divisor + 1));
+}
 /**
- * is_prime_number - checks if a int is a prime number.
+ * is_prime_number - check if a number is prime
+ * @n: The number to check
  *
- * @n: iput int.
- *
- * Return: 1 if n is prime otherwise zero.
+ * Return: 1 if the number is prime, 0 otherwise.
  */
 int is_prime_number(int n)
 {
-	long int fact = getFactorial(n - 1);
-
-	if (fact % n == n - 1)
-
-		return (1);
-	else
-		return (0);
+	return (is_prime_helper(n, 2));
 }
