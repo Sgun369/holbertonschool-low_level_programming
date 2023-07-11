@@ -13,23 +13,20 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0;
+	int i, j;
 
 	int lens1, lens2;
+
 	char *result;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		lens1 = s1[i];
-	}
-	for (j = 0; s2[j] != '\0'; j++)
-	{
-		lens2 = s2[j];
-	}
+
+	lens1 = strlen(s1);
+
+	lens2 = strlen(s2);
 
 	result = (char *)malloc((lens1 + lens2 + 1) * sizeof(char));
 
@@ -37,11 +34,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	memcpy(result, s1, lens1);
+	for (i = 0; i < lens2; i++)
+	{
+		result[i] = s1[i];
+	}
 
-	memcpy(result + lens1, s2, lens2);
-
-	result[lens1 + lens2] = '\0';
+	for (j = 0; j < lens2; j++)
+	{
+		result[i + j] = s2[j];
+	}
+	result[i + j] = '\0';
 
 	return (result);
 
