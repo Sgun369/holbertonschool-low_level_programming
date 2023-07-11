@@ -13,40 +13,29 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j;
+int s1_len, s2_len;
 
-	int lens1, lens2;
-
-	char *result;
+char *result;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	lens1 = strlen(s1);
+	s1_len = strlen(s1);
 
-	lens2 = strlen(s2);
+	s2_len = strlen(s2);
 
-	result = (char *)malloc((lens1 + lens2 + 1) * sizeof(char));
+	result = (char *)malloc((s1_len + s2_len + 1) * sizeof(char));
 
 	if (result == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < lens2; i++)
-	{
-		result[i] = s1[i];
-	}
 
-	for (j = 0; j < lens2; j++)
-	{
-		result[i + j] = s2[j];
-	}
-	result[i + j] = '\0';
+	strcpy(result, s1);
+
+	strcat(result, s2);
 
 	return (result);
-
-
-
 }
