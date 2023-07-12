@@ -1,1 +1,2 @@
-#def SIZE 1024
+#include <stdio.h>
+#define SIZE 1024
