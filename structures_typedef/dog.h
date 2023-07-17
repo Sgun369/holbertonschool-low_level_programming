@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef DOG
+#define DOG
 /**
  * struct dog - a struct named dog
  * @name : first member name
@@ -9,11 +9,10 @@
  *
  * Description : longer description goes here.
  */
- 
 struct dog
 {
 	char *name;
 	char *owner;
-	float age;	
+	float age;
 };
-
+#endif
