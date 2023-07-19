@@ -12,7 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	const unsigned int *p_n = &n;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i <= n; i++)
 	{
 		sum += n + p_n[i];
 	}
