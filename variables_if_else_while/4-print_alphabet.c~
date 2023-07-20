@@ -14,6 +14,6 @@ if
 (i != 'q');
 putchar(i);
 }
-putchar('\n');
+putchat('\n');
 return (0);
 }
