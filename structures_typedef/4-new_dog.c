@@ -1,23 +1,42 @@
 #include "dog.h"
-#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
 /**
- * new_dog - creates a new dog.
- * @name: name of the dog.
- * @age: age of the dog.
- * @owner: owner of the dog.
- *
- * Return: pointer to the struct.
- */
+* new_dog - creates a new dog
+* @name : name of the dogg
+* @age: age of the dog
+* @owner: owner of the doggo.
+* Return: return dog1
+*/
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new;
+	dog_t *doggo;
 
-	if (new)
+	doggo = malloc(sizeof(dog_t));
+
+	if (doggo == NULL)
+	{
 		return (NULL);
-	
-	new->name = name;
-	new->age = age;
-	new->owner = owner;
-	return (new);
+	}
+	doggo->name = malloc(sizeof(char) * strlen(name) + 1);
+	if (doggo->name == NULL)
+	{
+		free(doggo);
+		return (NULL);
+	}
+	doggo->owner = malloc(sizeof(char) * strlen(owner) + 1);
+	if (doggo->owner == NULL)
+	{
+		free(doggo->name);
+		free(doggo);
+		return (NULL);
+	}
+	strcpy(doggo->name, name);
+	strcpy(doggo->owner, owner);
+	doggo->age = age;
+	return (doggo);
+	free(doggo);
+	free(doggo->name);
+	free(doggo->owner);
 
 }
