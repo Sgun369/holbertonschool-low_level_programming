@@ -26,6 +26,13 @@ void exit_error_int(const char *msg, const int info, int code)
 	dprintf(STDERR_FILENO, msg, info);
 	exit(code);
 }
+/**
+ * main - program that copies the content of
+ * a file to another file.
+ * @argc: argc
+ * @argv: argv
+ * Return: success (0)
+*/
 int main(int argc, char *argv[])
 {
 	const char *src_file = argv[1], *dest_file = argv[2];
